@@ -15,6 +15,8 @@ github.com/montanaflynn/stats v0.6.6 h1:Duep6KMIDpY4Yo11iFsvyqJDyfzLF9+sndUKT+v6
 github.com/montanaflynn/stats v0.6.6/go.mod h1:etXPPgVO6n31NxCd9KQUMvCM+ve0ruNzt6R8Bnaayow=
 github.com/nblka/framely-assignment v0.0.0-20220112114015-2aa4b8f06b95 h1:SQ2xW7JgI6/Dm0F3PcEYySFPUzGTtGnebieR72/xDIc=
 github.com/nblka/framely-assignment v0.0.0-20220112114015-2aa4b8f06b95/go.mod h1:vkKc1zNV1V/z0HQJA5uHEMhnBdtzzLQ/v9jOD65cUdc=
+github.com/nblka/framely-assignment v0.0.0-20220112123108-c9c4e3b06f74 h1:a0sZ5U8lZQG4fMOu+vfmy8eBGzk3hhf+RvHMHRo9z/M=
+github.com/nblka/framely-assignment v0.0.0-20220112123108-c9c4e3b06f74/go.mod h1:vkKc1zNV1V/z0HQJA5uHEMhnBdtzzLQ/v9jOD65cUdc=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/showwin/speedtest-go v1.1.4 h1:pcY1W5LYZu44lH6Fuu80nu/Pj67n//VArlZudbAgR6E=
 github.com/showwin/speedtest-go v1.1.4/go.mod h1:dJugxvC/AQDt4HQQKZ9lKNa2+b1c8nzj9IL0a/F8l1U=

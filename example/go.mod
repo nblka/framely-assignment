@@ -2,7 +2,7 @@ module example
 
 go 1.17
 
-require github.com/nblka/framely-assignment v0.0.0-20220112114015-2aa4b8f06b95
+require github.com/nblka/framely-assignment v0.0.0-20220112123108-c9c4e3b06f74
 
 require (
 	github.com/antonholmquist/jason v1.0.0 // indirect
