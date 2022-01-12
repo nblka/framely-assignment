@@ -16,8 +16,14 @@ type iService interface {
 	Run() (Measure, error)
 }
 
+type iServiceFactory interface {
+	createService(s Service) (iService, error)
+}
+
+type serviceFactory struct{}
+
 // factory method for services
-func createService(s Service) (iService, error) {
+func (f serviceFactory) createService(s Service) (iService, error) {
 	switch s {
 	case SpeedTest:
 		return SpeedTestService{}, nil
@@ -29,7 +35,11 @@ func createService(s Service) (iService, error) {
 
 // returns download and upload speed along with error
 func Test(s Service) (Measure, error) {
-	service, err := createService(s)
+	return test(s, serviceFactory{})
+}
+
+func test(s Service, f iServiceFactory) (Measure, error) {
+	service, err := f.createService(s)
 	if err != nil {
 		return Measure{0.0, 0.0}, err
 	}
