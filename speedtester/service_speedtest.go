@@ -8,6 +8,7 @@ import (
 
 type SpeedTestService struct{}
 
+// iService interface implementation
 func (s SpeedTestService) Run() (Measure, error) {
 	// TODO: pass debug info to callback function
 	fmt.Println("speedtest service run")

@@ -8,5 +8,5 @@ type Measure struct {
 }
 
 func (m Measure) String() string {
-	return fmt.Sprintf("Download %v Mbps, upload %v Mbps", m.Download, m.Upload)
+	return fmt.Sprintf("Downloading speed %v Mbps, uploading speed %v Mbps", m.Download, m.Upload)
 }
