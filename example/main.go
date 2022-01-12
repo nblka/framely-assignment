@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"main/speedtester"
+
+	"github.com/nblka/framely-assignment/speedtester"
 )
 
 func main() {
