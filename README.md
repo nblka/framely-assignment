@@ -1,4 +1,4 @@
-# Framely assignment Go project
+# Framey assignment Go project
 
 ## Disclaimer
 
