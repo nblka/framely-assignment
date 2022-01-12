@@ -92,12 +92,16 @@ func TestTestWithOkServiceRun(t *testing.T) {
 
 func BenchmarkSpeedTestServiceUsage(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Test(SpeedTest)
+		if _, err := Test(SpeedTest); err != nil {
+			b.Fatal(err)
+		}
 	}
 }
 
 func BenchmarkNetflixFastComServiceUsage(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Test(NetflixFastCom)
+		if _, err := Test(NetflixFastCom); err != nil {
+			b.Fatal(err)
+		}
 	}
 }
