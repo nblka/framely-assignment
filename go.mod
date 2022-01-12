@@ -1,4 +1,4 @@
-module main
+module github.com/nblka/framely-assignment
 
 go 1.17
 
