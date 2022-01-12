@@ -9,21 +9,16 @@ const (
 	NetflixFastCom
 )
 
-type Measure struct {
-	Download float32
-	Upload   float32
-}
-
-func (m Measure) String() string {
-	return fmt.Sprintf("Download %v Mbps, upload %v Mbps", m.Download, m.Upload)
-}
-
 type iService interface {
-	Run() Measure
+	Run() (Measure, error)
 }
 
 func createService(s Service) (iService, error) {
-	// TODO
+	switch s {
+	case SpeedTest:
+		return SpeedTestService{}, nil
+		// TODO
+	}
 	return nil, fmt.Errorf("unknown service")
 }
 
@@ -33,5 +28,5 @@ func Test(s Service) (Measure, error) {
 	if err != nil {
 		return Measure{0.0, 0.0}, err
 	}
-	return service.Run(), nil
+	return service.Run()
 }
