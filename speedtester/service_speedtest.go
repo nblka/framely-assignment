@@ -34,6 +34,7 @@ func (s SpeedTestService) Run() (Measure, error) {
 	fmt.Print("Starting download speed test...")
 	err = targets[0].DownloadTest(false)
 	if err != nil {
+		fmt.Print(" failed\n")
 		return Measure{}, err
 	}
 	fmt.Print(" done\n")
@@ -41,6 +42,7 @@ func (s SpeedTestService) Run() (Measure, error) {
 	fmt.Print("Starting upload speed test...")
 	err = targets[0].UploadTest(false)
 	if err != nil {
+		fmt.Print(" failed\n")
 		return Measure{}, err
 	}
 	fmt.Print(" done\n")

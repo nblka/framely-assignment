@@ -89,3 +89,15 @@ func TestTestWithOkServiceRun(t *testing.T) {
 		t.Error()
 	}
 }
+
+func BenchmarkSpeedTestServiceUsage(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Test(SpeedTest)
+	}
+}
+
+func BenchmarkNetflixFastComServiceUsage(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Test(NetflixFastCom)
+	}
+}
