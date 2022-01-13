@@ -40,7 +40,7 @@ The `Test` method returns a tuple of the Measure struct holding download and upl
 
 NOTE: The fast.com service measures only the downloading speed, so the uploading speed is set to 0.
 
-NOTE: The fast.com service library (`go-fast`) don't return one speed, instead it returns several speed values in series. To get one value from these, I calculate a median.
+NOTE: The fast.com service library (`go-fast`) don't return one speed value, instead it returns several speed values in series. To get one value from these, I calculate a median.
 
 You can also refer to example or tests to find out the API usage.
 
@@ -50,7 +50,7 @@ From the root directory:
 
 ```sh
 cd example
-git run example
+go run example
 ```
 
 You will probably need to get imported libraries before running an example by using `go get -u` or something like that.
